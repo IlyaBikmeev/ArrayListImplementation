@@ -42,6 +42,13 @@ public class MyArrayList<T> implements List<T>{
     }
 
     @Override
+    public void addAll(List<? extends T> other) {
+        for(int i = 0; i < other.size(); ++i) {
+            add(other.get(i));
+        }
+    }
+
+    @Override
     @SuppressWarnings("unchecked")
     public T get(int index) {
         if(!checkIndex(index)) {
