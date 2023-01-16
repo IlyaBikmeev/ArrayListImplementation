@@ -2,7 +2,6 @@ package MyList;
 
 import java.util.Comparator;
 
-//add get remove addAll sort
 public interface List<T> {
     void add(T element);
     void addAll(List<? extends T> other);
